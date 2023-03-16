@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Author from "./author";
-import fetcher from "../lib/fetcher";
-import Spinner from "./_child/spinner";
-import Error from "./_child/error";
+import fetcher from "@/pages/lib/fetcher";
+import Spinner from "./spinner";
+import Error from "./error";
 
 export default function Related() {
   const { data, isError, isLoading } = fetcher("api/posts");
